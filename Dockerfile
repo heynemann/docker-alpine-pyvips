@@ -1,7 +1,7 @@
 FROM alpine:3.15
 
 # Supported and tested versions:
-# 3.11.0a3
+# 3.11.0a4
 # 3.10.1
 # 3.9.9
 # 3.8.12
@@ -67,4 +67,5 @@ RUN set -x -o pipefail \
 	&& python3 -m pip install --no-cache-dir -U pip wheel \
 	&& python3 -m pip install --no-cache-dir -U pyvips \
     && apk del --purge vips-dependencies \
-	&& rm -rf /var/cache/apk/*
+	&& rm -rf /var/cache/apk/* \
+	&& rm -rf $HOME/.cache/pip
