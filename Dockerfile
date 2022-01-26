@@ -57,6 +57,7 @@ RUN set -x -o pipefail \
     && rm /pyenv-installer \
     && echo 'eval "$(pyenv init -)"' >> ~/.bash_profile \
     && echo 'eval "$(pyenv virtualenv init -)"' >> ~/.bash_profile \ 
+	&& cd /root/.pyenv && git pull && cd - \
 	&& eval "$(pyenv init -)" \
     && eval "$(pyenv virtualenv init -)" \
 	&& pyenv install ${PYTHON_VERSION} \
