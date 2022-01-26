@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push 3.10
         if: matrix.python-version == '310'
-        id: docker_build
+        id: docker_build_latest
         uses: docker/build-push-action@v2
         with:
           context: .
@@ -46,7 +46,7 @@ jobs:
               matrix.vips-version }}
       - name: Build and push other versions
         if: matrix.python-version != '310'
-        id: docker_build
+        id: docker_build_others
         uses: docker/build-push-action@v2
         with:
           context: .
