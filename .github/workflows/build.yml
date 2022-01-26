@@ -16,6 +16,7 @@ jobs:
           - 3.8.12
           - 3.7.12
     steps:
+      - uses: actions/checkout@v2
       - uses: jungwinter/split@v2
         id: i
         with:
