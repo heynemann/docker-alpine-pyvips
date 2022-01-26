@@ -15,7 +15,7 @@ jobs:
           - 3.7.12
     steps:
       - uses: jungwinter/split@v2
-        id: split
+        id: i
         with:
           msg: ${{ matrix.python-version }}
           separator: .
@@ -38,9 +38,7 @@ jobs:
           tags:
             - alpine-pyvips:latest
             - alpine-pyvips:${{ matrix.python-version }}
-            - alpine-pyvips:${{ steps.split.outputs._0 }}.${{ steps.split.outputs._1
-              }}
-
+            - alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}
       - name: Build and push other versions
         if: matrix.python-version != '310'
         id: docker_build
@@ -50,5 +48,4 @@ jobs:
           push: true
           tags:
             - alpine-pyvips:${{ matrix.python-version }}
-            - alpine-pyvips:${{ steps.split.outputs._0 }}.${{ steps.split.outputs._1
-              }}
+            - alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}
