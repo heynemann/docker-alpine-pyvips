@@ -55,13 +55,13 @@ RUN set -x -o pipefail \
     && /bin/ln -s /root/.bashrc /root/.bash_profile \
     && /bin/bash /pyenv-installer \
     && rm /pyenv-installer \
+	&& cd /root/.pyenv && git pull && cd - \
     && echo 'eval "$(pyenv init -)"' >> ~/.bash_profile \
     && echo 'eval "$(pyenv virtualenv init -)"' >> ~/.bash_profile \ 
-	&& cd /root/.pyenv && git pull && cd - \
 	&& eval "$(pyenv init -)" \
     && eval "$(pyenv virtualenv init -)" \
-	&& pyenv install ${PYTHON_VERSION} \
-	&& pyenv virtualenv ${PYTHON_VERSION} pyvips \
+	&& pyenv install "${PYTHON_VERSION}" \
+	&& pyenv virtualenv "${PYTHON_VERSION}" pyvips \
 	&& pyenv activate pyvips \
 	&& python3 -m ensurepip \
 	&& python3 -m pip install --no-cache-dir -U pip wheel \
