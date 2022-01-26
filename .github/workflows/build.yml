@@ -40,9 +40,9 @@ jobs:
             VIPS_VERSION=${{ matrix.vips-version }}
           tags: |
             alpine-pyvips:latest
-            alpine-pyvips:latest-{{ matrix.vips-version }}
-            alpine-pyvips:${{ matrix.python-version }}-{{ matrix.vips-version }}
-            alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-{{
+            alpine-pyvips:latest-${{ matrix.vips-version }}
+            alpine-pyvips:${{ matrix.python-version }}-${{ matrix.vips-version }}
+            alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-${{
               matrix.vips-version }}
       - name: Build and push other versions
         if: matrix.python-version != '310'
@@ -55,6 +55,6 @@ jobs:
             VIPS_VERSION=${{ matrix.vips-version }}
           push: true
           tags: |-
-            alpine-pyvips:${{ matrix.python-version }}-{{ matrix.vips-version }}
-            alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-{{
+            alpine-pyvips:${{ matrix.python-version }}-${{ matrix.vips-version }}
+            alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-${{
               matrix.vips-version }}
