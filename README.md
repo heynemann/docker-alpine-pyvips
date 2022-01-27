@@ -49,18 +49,18 @@ Supported Versions:
 
 So the available tags are:
 
-- [thumbororg/alpine-pyvips:latest (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:latest-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.10-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.10.1-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [thumbororg/alpine-pyvips:3.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.9.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [thumbororg/alpine-pyvips:3.8-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.8.12-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [thumbororg/alpine-pyvips:3.7-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.7.12-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- [latest (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [latest-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10.1-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- [3.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.9.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- [3.8-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.8.12-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- [3.7-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.7.12-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
 
 Alpha tags:
-- [thumbororg/alpine-pyvips:3.11-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [thumbororg/alpine-pyvips:3.11.0a4-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- [3.11-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.11.0a4-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
 
 Just select the tag you want and:
 
 ```bash
-docker run --rm -it $DOCKERTAG /bin/bash
+docker run --rm -it thumbororg/alpine-pyvips:$DOCKERTAG /bin/bash
 ```
 
 ## 👍 Contribute
