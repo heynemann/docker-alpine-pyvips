@@ -44,6 +44,8 @@ jobs:
           tags: |
             thumbororg/alpine-pyvips:latest
             thumbororg/alpine-pyvips:latest-${{ matrix.vips-version }}
+            thumbororg/alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}
+            thumbororg/alpine-pyvips:${{ matrix.python-version }}
             thumbororg/alpine-pyvips:${{ matrix.python-version }}-${{ matrix.vips-version }}
             thumbororg/alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-${{
               matrix.vips-version }}
@@ -58,6 +60,8 @@ jobs:
             VIPS_VERSION=${{ matrix.vips-version }}
           push: true
           tags: |-
+            thumbororg/alpine-pyvips:${{ matrix.python-version }}
+            thumbororg/alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}
             thumbororg/alpine-pyvips:${{ matrix.python-version }}-${{ matrix.vips-version }}
             thumbororg/alpine-pyvips:${{ steps.i.outputs._0 }}.${{ steps.i.outputs._1 }}-${{
               matrix.vips-version }}

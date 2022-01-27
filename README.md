@@ -44,18 +44,20 @@ docker-alpine-pyvips builds images for several python versions and latest versio
 
 Supported Versions:
 
-- 🐍Python 3.7.12, 3.8.12, 3.9.9, 3.10.1 and 3.11.0a4
-- 📷Libvips 8.12.1
+- 🐍python 3.7.12, 3.8.12, 3.9.9, 3.10.1 and 3.11.0a4
+- 📷libvips 8.12.1
 
-So the available tags are:
+So the [available tags](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags) are:
 
-- 🐍3.10.1, 📷8.12.1: [latest](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [latest-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10.1-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- 🐍3.9.9, 📷8.12.1: [3.9-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.9.9-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- 🐍3.8.12, 📷8.12.1: [3.8-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.8.12-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- 🐍3.7.12, 📷8.12.1: [3.7-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.7.12-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.10.1 📷8.12.1: latest, 3.10, 3.10.1, latest-8.12.1, 3.10-8.12.1, 3.10.1-8.12.1
+- 🐍3.9.9 📷8.12.1: 3.9, 3.9.9, 3.9-8.12.1, 3.9.9-8.12.1
+- 🐍3.8.12 📷8.12.1: 3.8, 3.8.12, 3.8-8.12.1, 3.8.12-8.12.1
+- 🐍3.7.12 📷8.12.1: 3.7, 3.7.12, 3.7-8.12.1, 3.7.12-8.12.1
 
 Alpha tags:
-- 🐍3.11.0a4, 📷8.12.1: [3.11-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.11.0a4-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.11.0a4 📷8.12.1: 3.11, 3.11.0a4, 3.11-8.12.1, 3.11.0a4-8.12.1
+
+They are a format of "{python version}-{libvips version}".
 
 Just select the tag you want and:
 
