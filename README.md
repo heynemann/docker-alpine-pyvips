@@ -49,7 +49,7 @@ Supported Versions:
 
 So the [available tags](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags) are:
 
-## 🐍3.10.1 📷8.12.1
+### 🐍3.10.1 📷8.12.1
 
     * latest
     * 3.10
