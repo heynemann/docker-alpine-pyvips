@@ -58,14 +58,16 @@ RUN set -x -o pipefail \
 	&& cd /root/.pyenv && git pull && cd - \
     && echo 'eval "$(pyenv init -)"' >> ~/.bash_profile \
     && echo 'eval "$(pyenv virtualenv init -)"' >> ~/.bash_profile \ 
-	&& eval "$(pyenv init -)" \
+    && eval "$(pyenv init -)" \
     && eval "$(pyenv virtualenv init -)" \
-	&& pyenv install "${PYTHON_VERSION}" \
-	&& pyenv virtualenv "${PYTHON_VERSION}" pyvips \
-	&& pyenv activate pyvips \
-	&& python3 -m ensurepip \
-	&& python3 -m pip install --no-cache-dir -U pip wheel \
-	&& python3 -m pip install --no-cache-dir -U pyvips \
+    && pyenv install "${PYTHON_VERSION}" \
+    && pyenv local "${PYTHON_VERSION}" \
+    && pyenv global "${PYTHON_VERSION}" \
+    && pyenv virtualenv "${PYTHON_VERSION}" pyvips \
+    && pyenv activate pyvips \
+    && python3 -m ensurepip \
+    && python3 -m pip install --no-cache-dir -U pip wheel \
+    && python3 -m pip install --no-cache-dir -U pyvips \
     && apk del --purge vips-dependencies \
-	&& rm -rf /var/cache/apk/* \
-	&& rm -rf $HOME/.cache/pip
+    && rm -rf /var/cache/apk/* \
+    && rm -rf $HOME/.cache/pip
