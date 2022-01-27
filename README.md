@@ -49,13 +49,13 @@ Supported Versions:
 
 So the available tags are:
 
-- [latest (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [latest-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10.1-8.12.1 (🐍3.10.1, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [3.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.9.9-8.12.1 (🐍3.9.9, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [3.8-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.8.12-8.12.1 (🐍3.8.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
-- [3.7-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.7.12-8.12.1 (🐍3.7.12, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.10.1, 📷8.12.1: [latest](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [latest-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.10.1-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.9.9, 📷8.12.1: [3.9-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.9.9-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.8.12, 📷8.12.1: [3.8-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.8.12-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.7.12, 📷8.12.1: [3.7-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.7.12-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
 
 Alpha tags:
-- [3.11-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.11.0a4-8.12.1 (🐍3.11.0a4, 📷8.12.1)](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
+- 🐍3.11.0a4, 📷8.12.1: [3.11-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags), [3.11.0a4-8.12.1](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags)
 
 Just select the tag you want and:
 
