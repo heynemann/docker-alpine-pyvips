@@ -35,6 +35,9 @@ RUN set -x -o pipefail \
       sqlite-dev \
       ncurses-dev \
       linux-headers \
+      musl-dev \
+      g++ \
+      gcc \
     && apk add --virtual vips-dependencies build-base \
     zlib-dev libxml2-dev glib-dev gobject-introspection-dev \
     libjpeg-turbo-dev libexif-dev lcms2-dev fftw-dev giflib-dev libpng-dev \
