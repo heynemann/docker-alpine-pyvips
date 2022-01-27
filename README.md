@@ -10,7 +10,7 @@ Modern alpine container for multiple python versions and pyvips.
 
 <p align="center">
   <img src='https://github.com/heynemann/docker-alpine-pyvips/workflows/build/badge.svg' />
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/heynemann/docker-alpine-pyvips?style=plastic">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/heynemann/docker-alpine-pyvips">
   <a href='https://github.com/heynemann/docker-alpine-pyvips/pulls' target='_blank'>
     <img src='https://img.shields.io/github/issues-pr-raw/heynemann/docker-alpine-pyvips.svg'/>
   </a>
