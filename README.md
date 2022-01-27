@@ -10,17 +10,17 @@ Modern alpine container for multiple python versions and pyvips.
 
 <p align="center">
   <img src='https://github.com/heynemann/docker-alpine-pyvips/workflows/build/badge.svg' />
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/heynemann/docker-alpine-pyvips?style=social">
   <a href='https://github.com/heynemann/docker-alpine-pyvips/pulls' target='_blank'>
     <img src='https://img.shields.io/github/issues-pr-raw/heynemann/docker-alpine-pyvips.svg'/>
   </a>
   <a href='https://github.com/heynemann/docker-alpine-pyvips/issues' target='_blank'>
     <img src='https://img.shields.io/github/issues-raw/heynemann/docker-alpine-pyvips.svg'/>
   </a>
-  <a href='https://pypi.python.org/pypi/docker-alpine-pyvips' target='_blank'>
-    <img src='https://img.shields.io/pypi/v/docker-alpine-pyvips.svg'/>
-  </a>
-  <a href='https://pypi.python.org/pypi/docker-alpine-pyvips' target='_blank'>
-    <img src='https://img.shields.io/pypi/dm/docker-alpine-pyvips.svg'/>
+  <a href='https://hub.docker.com/r/thumbororg/alpine-pyvips' target='_blank'>
+      <img alt="Docker Image Size (latest semver)" src="https://img.shields.io/docker/image-size/thumbororg/alpine-pyvips?style=flat-square">
+  <a href='https://hub.docker.com/r/thumbororg/alpine-pyvips' target='_blank'>
+      <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/thumbororg/alpine-pyvips">
   </a>
 </p>
 
