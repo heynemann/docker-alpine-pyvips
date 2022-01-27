@@ -51,12 +51,12 @@ So the [available tags](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags) 
 
 ### 🐍3.10.1 📷8.12.1
 
-    * latest
-    * 3.10
-    * 3.10.1
-    * latest-8.12.1
-    * 3.10-8.12.1
-    * 3.10.1-8.12.1
+    latest
+    3.10
+    3.10.1
+    latest-8.12.1
+    3.10-8.12.1
+    3.10.1-8.12.1
 
 ### 🐍3.9.9 📷8.12.1
 
