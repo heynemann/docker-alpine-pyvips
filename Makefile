@@ -4,7 +4,7 @@ build-311:
 	@docker build \
 		-t alpine-pyvips:3.11 \
 		-t alpine-pyvips:3.11.0a3 \
-		--build-arg PYTHON_VERSION=3.11.0a3 \
+		--build-arg PYTHON_VERSION=3.11.0a4 \
 		.
 	
 build-310:

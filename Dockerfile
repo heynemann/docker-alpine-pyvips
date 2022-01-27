@@ -1,7 +1,7 @@
 FROM alpine:3.15
 
 # Supported and tested versions:
-# 3.11.0a3
+# 3.11.0a4
 # 3.10.1
 # 3.9.9
 # 3.8.12
@@ -55,15 +55,17 @@ RUN set -x -o pipefail \
     && /bin/ln -s /root/.bashrc /root/.bash_profile \
     && /bin/bash /pyenv-installer \
     && rm /pyenv-installer \
+	&& cd /root/.pyenv && git pull && cd - \
     && echo 'eval "$(pyenv init -)"' >> ~/.bash_profile \
     && echo 'eval "$(pyenv virtualenv init -)"' >> ~/.bash_profile \ 
 	&& eval "$(pyenv init -)" \
     && eval "$(pyenv virtualenv init -)" \
-	&& pyenv install ${PYTHON_VERSION} \
-	&& pyenv virtualenv ${PYTHON_VERSION} pyvips \
+	&& pyenv install "${PYTHON_VERSION}" \
+	&& pyenv virtualenv "${PYTHON_VERSION}" pyvips \
 	&& pyenv activate pyvips \
 	&& python3 -m ensurepip \
 	&& python3 -m pip install --no-cache-dir -U pip wheel \
 	&& python3 -m pip install --no-cache-dir -U pyvips \
     && apk del --purge vips-dependencies \
-	&& rm -rf /var/cache/apk/*
+	&& rm -rf /var/cache/apk/* \
+	&& rm -rf $HOME/.cache/pip
