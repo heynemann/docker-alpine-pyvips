@@ -88,7 +88,7 @@ So the [available tags](https://hub.docker.com/r/thumbororg/alpine-pyvips/tags) 
 
 They are a format of "{python version}-{libvips version}".
 
-Just select the tag you want and:
+Just select the tag you want and run with:
 
 ```bash
 docker run --rm -it thumbororg/alpine-pyvips:$DOCKERTAG /bin/bash
