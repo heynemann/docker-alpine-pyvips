@@ -26,7 +26,7 @@ RUN set -x -o pipefail \
       libjpeg-turbo libexif lcms2 fftw giflib libpng \
       libwebp orc tiff poppler-glib librsvg libgsf openexr \
       libheif libimagequant pango curl \
-      ca-certificates \
+      ca-certificates libffi libffi-dev \
       bash \
       git \
       openssl-dev \
